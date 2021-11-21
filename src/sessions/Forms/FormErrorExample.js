@@ -15,10 +15,16 @@ const FormErrorExample = () => {
     <>
       <form className='form' onSubmit={submitHandler}>
         <div className='container'>
-          <label>Username</label>
-          <input type='text' value={name}></input>
+          <label>Username : </label>
+          <input
+            type='text'
+            value={name}
+            onChange={() => setName('Chetan G')}
+          ></input>
         </div>
-        <button className='btn'>submit</button>
+        <button type='submit' className='btn'>
+          submit
+        </button>
       </form>
     </>
   );
